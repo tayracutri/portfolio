@@ -9,7 +9,6 @@ const Recent = () => {
         <img className="card-img-top" src={bikes} alt="Card cap" />
         <div>
           <h5 className="title">Rad Power Bikes | E-commerce</h5>
-
           <a href="https://hackpowerbikes.vercel.app/" target="blank">
             Live Demo
           </a>

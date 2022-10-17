@@ -1,6 +1,9 @@
 .recent{
     height: 100vh;
 }
+.recent h2{
+    color:#212806;
+}
 
 .project-card{
     border-radius: 10px;
