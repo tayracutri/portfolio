@@ -1,0 +1,37 @@
+.about-container{
+    padding: 150px;
+    height: 100vh;
+    text-align: center;
+}
+
+.about-container h1{
+    color: #212806;
+    font-size: 3rem;
+}
+.about-container p{
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+
+.about-container a{
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.4rem;
+    padding: 7px;
+    
+}
+
+.about-container a:hover{
+    background-color: #000;
+    border: 1px solid #E5D9CA;
+    color: #E5D9CA;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-container img{
+    border-radius: 50%;
+    width: 30%;
+
+}

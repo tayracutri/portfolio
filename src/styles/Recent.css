@@ -1,0 +1,9 @@
+.recent{
+    height: 100vh;
+}
+
+.project-card{
+    border-radius: 10px;
+    background-color: rgb(220, 219, 219);
+    width: 20rem;
+}

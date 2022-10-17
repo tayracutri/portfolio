@@ -1,0 +1,23 @@
+.exp-container{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.exp-container ul{
+    list-style-type: none;
+}
+
+.exp-container img{
+    width: 70px;
+}
+
+.exp-container p{
+    text-align: center;
+}
