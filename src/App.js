@@ -6,6 +6,7 @@ import MainNavbar from "./components/MainNavbar";
 import Recent from "./components/Recent";
 import "./styles/index.css";
 import { Contact } from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Recent />
         <Contact />
       </div>
+      <Footer />
     </>
   );
 }

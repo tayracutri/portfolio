@@ -4,7 +4,7 @@ import "../styles/Recent.css";
 const Recent = () => {
   return (
     <div className="recent" id="projects">
-      <h2>Recent Projects</h2>
+      <h2>Recent projects</h2>
       <div className="project-card">
         <img className="card-img-top" src={bikes} alt="Card cap" />
         <div>

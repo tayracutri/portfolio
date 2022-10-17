@@ -1,9 +1,12 @@
 .about-container{
-    padding: 150px;
-    height: 100vh;
+    padding: 100px 0;
     text-align: center;
 }
 
+.about-container img{
+    border-radius: 50%;
+    width: 30%;
+}
 .about-container h1{
     color: #212806;
     font-size: 3rem;
@@ -13,25 +16,24 @@
     margin: 20px 0;
 }
 
-.about-container a{
-    border: 1px solid #000;
-    border-radius: 10px;
-    color: #000;
-    font-size: 1.4rem;
-    padding: 7px;
-    
+.about-icons-container{
+margin-bottom: 25px;
+}
+.btn-cv{
+    border: 1px solid #212806 !important;
+    color: #212806 !important;
+    font-size: 15px !important;
+    width: 10rem;
 }
 
-.about-container a:hover{
+.btn-cv:hover{
     background-color: #000;
     border: 1px solid #E5D9CA;
     color: #E5D9CA;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: 0.3s;
 }
 
-.about-container img{
-    border-radius: 50%;
-    width: 30%;
-
+.about-container a{
+    text-decoration: none;
 }

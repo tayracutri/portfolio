@@ -1,6 +1,17 @@
+.contact{
+    padding: 300px 0 120px 0;
+}
+
 .btn-send, .btn-send:hover{
-    border: 1px solid #212806;
-    color: #212806;
-    font-size: 18px;
-    width: 6rem;
+    border: 1px solid #212806 !important;
+    color: #212806 !important;
+    font-size: 15px !important;
+    width: 5.8rem;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color:  #212806 !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus{
+outline: red;
 }

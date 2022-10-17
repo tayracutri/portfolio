@@ -5,7 +5,13 @@ import "../styles/MainNavbar.css";
 
 const MainNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" sticky="top" className="px-5">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      sticky="top"
+      className="px-5"
+      style={{ backgroundColor: "#E5D9CA" }}
+    >
       <Navbar.Brand>TAYRA CUTRI</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
