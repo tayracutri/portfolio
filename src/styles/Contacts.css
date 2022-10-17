@@ -1,0 +1,6 @@
+.btn-send, .btn-send:hover{
+    border: 1px solid #212806;
+    color: #212806;
+    font-size: 18px;
+    width: 6rem;
+}

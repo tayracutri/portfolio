@@ -1,40 +1,43 @@
-import React, { useState } from "react";
-import { Button, Grid, Link, TextField, Typography } from "@mui/material";
-export const Contact = () => {
-  const [formState, setFormState] = useState({});
+import React, { useRef } from "react";
+import { Button, Grid, TextField } from "@mui/material";
+import emailjs from "@emailjs/browser";
+import "../styles/Contacts.css";
 
-  const handleChange = (e) => {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  };
+export const Contact = () => {
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const config = {
-      SecureToken: "6a9b14e7-e464-4302-9388-0f2e1f801316",
-      To: "tayracutri10@gmail.com",
-      From: formState.email,
-      Subject: "This is the subject",
-      Body: `${formState.name} contacted you.`,
-    };
-    if (window.Email) {
-      window.Email.send(config).then(() => alert("email sent"));
-    }
-  };
 
+    emailjs
+      .sendForm(
+        "service_l5k1h7m",
+        "template_li052s4",
+        form.current,
+        "jWllRSXuSbTXpIyLr"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
-    <div id="contact">
+    <div className="contact" id="contact">
       <h2>Contact me</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={handleSubmit}>
         <Grid container>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
               label="Name"
               type="name"
-              name="name"
+              name="from_name"
               fullWidth
-              onChange={handleChange}
-              value={formState.name || ""}
+              placeholder="Name"
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
@@ -43,17 +46,23 @@ export const Contact = () => {
               type="email"
               placeholder="email@email.com"
               fullWidth
-              onChange={handleChange}
-              value={formState.email || ""}
-              name="email"
+              name="from_name"
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
-            <TextField label="Message" type="text" placeholder="" fullWidth />
+            <TextField
+              label="Message"
+              name="message"
+              type="text"
+              placeholder="Write your message!"
+              fullWidth
+            />
           </Grid>
         </Grid>
         <Grid container direction="row" justifyContent="end" sx={{ mt: 2 }}>
-          <Button variant="outlined">Send</Button>
+          <Button variant="outlined" type="submit" className="btn-send">
+            Send
+          </Button>
         </Grid>
       </form>
     </div>
