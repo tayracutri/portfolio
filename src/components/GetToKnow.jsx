@@ -13,8 +13,8 @@ const GetToKnow = () => {
           expand my knowledge and learn new technologies.
         </p>
         <p>
-          I did online courses for 2 years and a half. And I recently finished a
-          full-time Coding Bootcamp of 600 hours.
+          I've been working on personal projects since 2020. And I recently
+          finished a full-time Coding Bootcamp of 600 hours.
         </p>
       </div>
     </div>

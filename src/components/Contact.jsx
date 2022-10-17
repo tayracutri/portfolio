@@ -1,10 +1,17 @@
 import React, { useRef } from "react";
 import { Button, Grid, TextField } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/Contacts.css";
 
 export const Contact = () => {
   const form = useRef();
+
+  const notify = () =>
+    toast.success("Email sent!", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +26,7 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          notify();
         },
         (error) => {
           console.log(error.text);
@@ -64,6 +72,7 @@ export const Contact = () => {
             Send
           </Button>
         </Grid>
+        <ToastContainer />
       </form>
     </div>
   );

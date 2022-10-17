@@ -12,6 +12,8 @@
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
   color:  #212806 !important;
 }
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus{
-outline: red;
+
+.textfield:focus-within{
+    
+    border: 1px solid #212806 !important;
 }
