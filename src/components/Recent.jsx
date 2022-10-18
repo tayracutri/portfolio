@@ -1,32 +1,40 @@
 import React from "react";
 import bikes from "../assets/projects/bikes.jpg";
+import arrow from "../assets/projects/right-arrow.png";
 import "../styles/Recent.css";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
 
 const Recent = () => {
   return (
     <div className="recent" id="projects">
       <h2>Recent projects</h2>
-      <div className="project-card">
-        <Card sx={{ maxWidth: 350 }}>
-          <CardActionArea>
-            <CardMedia component="img" height="180" image={bikes} />
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                Rad Power Bikes | E-commerce
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              Live demo
-            </Button>
-          </CardActions>
-        </Card>
+      <div className="projects-container">
+        <div className="card">
+          <img src={bikes} alt="image1" className="top" />
+          <h4>Rad Power Bikes | E-commerce</h4>
+          <p>React.js, Redux, MySQL, Sequelize</p>
+          <a href="https://hackpowerbikes.vercel.app/" target="blank">
+            Live Demo <img className="arrow-main-button" src={arrow} alt="" />
+          </a>
+        </div>
+
+        <div className="card">
+          <img src={bikes} alt="image1" className="top" />
+          <h4>Hackflix</h4>
+          <p>React.js</p>
+          <a href="/">
+            Live Demo <img className="arrow-main-button" src={arrow} alt="" />
+          </a>
+        </div>
+
+        {/* <div class="card">
+          <img src="./assets/business.svg" alt="image1" class="top" />
+          <h3>Business Strategy</h3>
+          <p>
+            Assertively parallel task synergistic deliverables after
+            high-quality.
+          </p>
+          <a href="#">Learn More</a>
+        </div> */}
       </div>
     </div>
   );

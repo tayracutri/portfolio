@@ -16,26 +16,17 @@ const MainNavbar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <a href="#about">
-            <div className="nav-home-item">
-              <p className="m-0 p-0 p-lg-3">About </p>
-            </div>
+          <a href="#about" className="nav-link nav-link-grow-up">
+            About
           </a>
-
-          <a href="#skills">
-            <div className="nav-home-item">
-              <p className="m-0 p-0 p-lg-3">Skills</p>
-            </div>
+          <a href="#skills" className="nav-link nav-link-grow-up">
+            Skills
           </a>
-          <a href="#projects">
-            <div className="nav-home-item">
-              <p className="m-0 p-0 p-lg-3">Recent Projects</p>
-            </div>
+          <a href="#projects" className="nav-link nav-link-grow-up">
+            Recent Projects
           </a>
-          <a href="#contact">
-            <div className="nav-home-item">
-              <p className="m-0 p-0 p-lg-3">Contact Me</p>
-            </div>
+          <a href="#contact" className="nav-link nav-link-grow-up">
+            Contact Me
           </a>
         </Nav>
       </Navbar.Collapse>
