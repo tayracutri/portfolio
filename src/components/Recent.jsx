@@ -1,5 +1,6 @@
 import React from "react";
 import bikes from "../assets/projects/bikes.jpg";
+import hackflix from "../assets/projects/hackflix.jpg";
 import arrow from "../assets/projects/right-arrow.png";
 import "../styles/Recent.css";
 
@@ -11,16 +12,16 @@ const Recent = () => {
         <div className="card">
           <img src={bikes} alt="image1" className="top" />
           <h4>Rad Power Bikes | E-commerce</h4>
-          <p>React.js, Redux, MySQL, Sequelize</p>
+          <p>React.js, Redux, MySQL, Sequelize, Bootstrap</p>
           <a href="https://hackpowerbikes.vercel.app/" target="blank">
             Live Demo <img className="arrow-main-button" src={arrow} alt="" />
           </a>
         </div>
 
         <div className="card">
-          <img src={bikes} alt="image1" className="top" />
+          <img src={hackflix} alt="image1" className="top" />
           <h4>Hackflix</h4>
-          <p>React.js</p>
+          <p>React.js, Bootstrap</p>
           <a href="/">
             Live Demo <img className="arrow-main-button" src={arrow} alt="" />
           </a>

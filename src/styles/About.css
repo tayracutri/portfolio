@@ -37,3 +37,9 @@ margin-bottom: 25px;
 .about-container a{
     text-decoration: none;
 }
+
+@media (max-width:995px) {
+    .about-container img{
+        width: 45%;
+    }
+}
