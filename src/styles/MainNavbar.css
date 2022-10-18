@@ -1,3 +1,8 @@
+.navbrand, .navbrand:hover{
+  color:#161514;
+  text-decoration: none;
+}
+
 .nav-link {
     color: #272828 !important;
     display: inline-block;

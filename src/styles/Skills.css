@@ -24,3 +24,8 @@ h2{
 .exp-container p{
     text-align: center;
 }
+
+.animation:hover{
+    animation: pulse; 
+    animation-duration: 2.5s
+}

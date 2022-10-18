@@ -12,7 +12,11 @@ const MainNavbar = () => {
       className="px-5"
       style={{ backgroundColor: "#E5D9CA" }}
     >
-      <Navbar.Brand>TAYRA CUTRI</Navbar.Brand>
+      <Navbar.Brand>
+        <a href="/" className="navbrand">
+          TAYRA CUTRI
+        </a>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">

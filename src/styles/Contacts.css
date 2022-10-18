@@ -1,6 +1,11 @@
 .contact{
     padding: 300px 0 200px 0;
 }
+.contact span{
+    color: #646561;
+    font-size: 18px;
+    margin-left: 5px;
+}
 
 .btn-send, .btn-send:hover{
     border: 1px solid #212806 !important;
