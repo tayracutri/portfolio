@@ -119,7 +119,7 @@ export const Contact = () => {
               label="Message"
               name="message"
               type="text"
-              placeholder="Write your message!"
+              placeholder="Write your message"
               fullWidth
               required
               value={message}
