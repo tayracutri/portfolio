@@ -1,10 +1,13 @@
+.nav{
+  position: fixed;
+}
 .navbrand, .navbrand:hover{
   color:#161514;
   text-decoration: none;
 }
 
 .nav-link {
-    color: #272828 !important;
+    color: #272828 ;
     display: inline-block;
     margin: 0px 15px;
     opacity: 0.75;

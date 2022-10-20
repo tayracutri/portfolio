@@ -6,7 +6,7 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about">
       <img src={avatar} alt="avatar" />
       <h1>Hi, I'm Tayra :)</h1>
       <p>Full Stack Developer Junior</p>

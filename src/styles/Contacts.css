@@ -7,18 +7,5 @@
     margin-left: 5px;
 }
 
-.btn-send, .btn-send:hover{
-    border: 1px solid #212806 !important;
-    color: #212806 !important;
-    font-size: 15px !important;
-    width: 5.8rem;
-}
 
-.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
-  color:  #212806 !important;
-}
 
-.textfield:focus-within{
-    
-    border: 1px solid #212806 !important;
-}

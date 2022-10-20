@@ -1,0 +1,70 @@
+:root{
+  --main-light: #E5D9CA;
+  --main-dark: #12130f;
+}
+
+#light{
+  background-color: var(--main-light);
+}
+
+#light h2{
+  color: #212806;
+}
+#light .contact .btn-send, .contact .btn-send:hover{
+  border: 1px solid #212806 !important;
+  color: #212806 !important;
+  font-size: 15px !important;
+  width: 4.6rem;
+}
+
+/* ---DARK MODE---  */
+#dark{
+  background-color: var(--main-dark);
+  color: #FFF;
+}
+
+#dark h1, .getToKnow h2, .recent h2, .contact h2, .skills h2{
+  color: var(--main-light);
+}
+
+#dark .nav a{
+  color: #e9dfd3;
+}
+#dark .nav-link::before{
+background-color: #e9dfd3;
+}
+
+#dark .about svg path{
+  fill: var(--main-light);
+}
+
+#dark .about .btn-cv,.contact .btn-send, .contact .btn-send:hover {
+ color: rgb(198, 192, 192) !important;
+  border: 1px solid var(--main-light) !important;
+  color: var(--main-light) !important;
+}
+
+#dark .contact .text-field {
+ color: rgb(230, 228, 228) !important;
+ border:1px solid #e9dfd3;
+ border-radius: 5px;
+}
+
+#dark .contact span {
+color: rgb(206, 206, 206);
+}
+
+#dark .footer-basic{
+  background-color: #151615;
+  color: #fff;
+}
+
+#dark .footer-basic .copyright{
+  color: rgb(200, 199, 199);
+}
+
+.switch{
+  align-items: flex-end;
+  display: flex;
+  justify-content: end;
+}

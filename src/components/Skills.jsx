@@ -12,7 +12,7 @@ import redux from "../assets/skills/redux.png";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div className="skills" id="skills">
       <h2>Skills</h2>
       <div className="exp-container">
         <div className="col">

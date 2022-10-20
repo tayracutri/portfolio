@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/GetToKnow.css";
+import "../styles/App.css";
 
 const GetToKnow = () => {
   return (

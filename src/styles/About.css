@@ -1,17 +1,17 @@
-.about-container{
+.about{
     padding: 100px 0;
     text-align: center;
 }
 
-.about-container img{
+.about img{
     border-radius: 50%;
     width: 30%;
 }
-.about-container h1{
+.about h1{
     color: #212806;
     font-size: 3rem;
 }
-.about-container p{
+.about p{
     font-size: 1.6rem;
     margin: 20px 0;
 }
@@ -34,17 +34,17 @@ margin-bottom: 25px;
     transition: 0.3s;
 }
 
-.about-container a{
+.about a{
     text-decoration: none;
 }
 
 @media (max-width:995px) {
-    .about-container img{
+    .about img{
         width: 45%;
     }
 }
 @media (max-width:770px) {
-    .about-container {
+    .about {
     padding: 100px 0 0 0;
     }
 }

@@ -98,6 +98,7 @@ export const Contact = () => {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
@@ -110,6 +111,7 @@ export const Contact = () => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
@@ -122,6 +124,7 @@ export const Contact = () => {
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              className="text-field"
             />
           </Grid>
         </Grid>
