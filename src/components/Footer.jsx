@@ -9,7 +9,7 @@ const Footer = () => {
           <a href="https://github.com/tayracutri" target="blank">
             <i className="icon ion-social-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/tayracutri/">
+          <a href="https://www.linkedin.com/in/tayracutri/" target="blank">
             <i className="icon ion-social-linkedin"></i>
           </a>
         </div>

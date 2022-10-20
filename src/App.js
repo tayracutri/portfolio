@@ -7,10 +7,19 @@ import Recent from "./components/Recent";
 import "./styles/index.css";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
+import { ThemeContext } from "./hooks/createContext";
+import { useState } from "react";
+
 
 function App() {
+const [theme, setTheme] = useState('light');
+const toggleTheme = ()=>{
+  setTheme((current)=> current === 'light'?'dark':"light")
+}
   return (
-    <>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+
+   
       <MainNavbar />
 
       <div className="container">
@@ -21,7 +30,8 @@ function App() {
         <Contact />
       </div>
       <Footer />
-    </>
+
+    </ThemeContext.Provider>
   );
 }
 

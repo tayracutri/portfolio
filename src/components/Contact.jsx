@@ -101,6 +101,7 @@ export const Contact = () => {
               name="from_name"
               fullWidth
               placeholder="Name"
+              required
               // onChange={handleChange}
             />
           </Grid>
@@ -111,6 +112,7 @@ export const Contact = () => {
               placeholder="email@email.com"
               fullWidth
               name="from_name"
+              required
               // onChange={handleChange}
             />
           </Grid>
@@ -121,6 +123,7 @@ export const Contact = () => {
               type="text"
               placeholder="Write your message!"
               fullWidth
+              required
               // onChange={handleChange}
             />
           </Grid>
