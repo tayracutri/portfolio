@@ -1,5 +1,8 @@
 .nav{
+  background-color: #E5D9CA;
   position: fixed;
+  width: 100vw;
+  z-index: 1;
 }
 .navbrand, .navbrand:hover{
   color:#161514;

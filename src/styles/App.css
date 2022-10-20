@@ -17,6 +17,8 @@
   width: 4.6rem;
 }
 
+
+
 /* ---DARK MODE---  */
 #dark{
   background-color: var(--main-dark);
@@ -26,12 +28,20 @@
 #dark h1, .getToKnow h2, .recent h2, .contact h2, .skills h2{
   color: var(--main-light);
 }
+#dark .nav{
+  background-color: var(--main-dark);
+}
 
 #dark .nav a{
   color: #e9dfd3;
 }
 #dark .nav-link::before{
 background-color: #e9dfd3;
+}
+#dark .navbar-toggler-icon{
+  background-color: var(--main-light);
+  border-radius: 5px;
+  padding: 18px 25px;
 }
 
 #dark .about svg path{
@@ -67,8 +77,3 @@ color: rgb(206, 206, 206);
   color: rgb(200, 199, 199);
 }
 
-.switch{
-  align-items: flex-end;
-  display: flex;
-  justify-content: end;
-}
