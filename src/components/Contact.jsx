@@ -3,7 +3,7 @@ import { Button, Grid, TextField } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../styles/Contacts.css";
+import "../styles/Contact.css";
 
 export const Contact = () => {
   const [message, setMessage] = useState("");
@@ -89,7 +89,7 @@ export const Contact = () => {
       <form ref={form} onSubmit={handleSubmit}>
         <Grid container>
           <Grid item xs={12} sx={{ mt: 2 }}>
-            <TextField
+            <input
               label="Name"
               type="name"
               name="from_name"
@@ -102,11 +102,10 @@ export const Contact = () => {
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
-            <TextField
+            <input
               label="Email"
               type="email"
               placeholder="email@email.com"
-              fullWidth
               name="from_name"
               required
               value={email}
@@ -115,7 +114,7 @@ export const Contact = () => {
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
-            <TextField
+            <textarea
               label="Message"
               name="message"
               type="text"

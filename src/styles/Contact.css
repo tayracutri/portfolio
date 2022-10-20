@@ -1,0 +1,22 @@
+.contact{
+    padding: 300px 0 200px 0;
+}
+.contact span{
+    color: #646561;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+.text-field{
+    background-color: transparent;
+    border: 1px solid rgb(149, 149, 149);
+    border-radius:5px;
+    padding: 15px;
+    width: 100%;
+}
+
+.text-field:hover{
+    border: 1px solid rgb(31, 31, 31);
+}
+
