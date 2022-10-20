@@ -7,18 +7,23 @@ import "../styles/Contacts.css";
 
 export const Contact = () => {
   const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const form = useRef();
 
   const notifySuccess = () =>
     toast.success("Email sent!", {
       position: toast.POSITION.BOTTOM_RIGHT,
     });
-  const notifyError = () =>
-    toast.error("All fields are required.", {
-      position: toast.POSITION.BOTTOM_RIGHT,
-    });
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setTimeout(() => {
+      setMessage("");
+      setEmail("");
+      setName("");
+    }, 1000);
 
     emailjs
       .sendForm(
@@ -38,18 +43,7 @@ export const Contact = () => {
         }
       );
   };
-  // const handleChange = (event) => {
-  //   setMessage(event.target.value);
-  // };
 
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   if (message.trim().length !== 0) {
-  //     console.log("input value is NOT empty");
-  //   } else {
-  //     notifyError();
-  //   }
-  // };
   return (
     <div className="contact" id="contact">
       <h2>Contact me</h2>
@@ -102,7 +96,8 @@ export const Contact = () => {
               fullWidth
               placeholder="Name"
               required
-              // onChange={handleChange}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
@@ -113,7 +108,8 @@ export const Contact = () => {
               fullWidth
               name="from_name"
               required
-              // onChange={handleChange}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
@@ -124,17 +120,13 @@ export const Contact = () => {
               placeholder="Write your message!"
               fullWidth
               required
-              // onChange={handleChange}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </Grid>
         </Grid>
         <Grid container direction="row" justifyContent="end" sx={{ mt: 2 }}>
-          <Button
-            variant="outlined"
-            type="submit"
-            className="btn-send"
-            // onClick={handleClick}
-          >
+          <Button variant="outlined" type="submit" className="btn-send">
             Send
           </Button>
         </Grid>
