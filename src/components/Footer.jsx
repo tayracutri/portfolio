@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <p className="copyright">
-          Tayra Cutri | Full Stack Developer Junior © 2022
+          Tayra Cutri | Full Stack Developer Junior © 2023
         </p>
       </footer>
     </div>

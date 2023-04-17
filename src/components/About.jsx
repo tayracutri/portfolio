@@ -1,13 +1,14 @@
 import React from "react";
 import avatar from "../assets/profile.jpeg";
-import CV from "../assets/files/CV-Tayra Cutri.pdf";
+import icon from "../assets/icon.png";
+import CV from "../assets/files/CV-Cutri Tayra.pdf";
 import { Button } from "@mui/material";
 import "../styles/About.css";
 
 const About = () => {
   return (
     <div className="about">
-      <img src={avatar} alt="avatar" />
+      <img src={icon} alt="avatar" />
       <h1>Hi, I'm Tayra :)</h1>
       <p>Full Stack Developer Junior</p>
       <div className="about-icons-container">
@@ -25,7 +26,7 @@ const About = () => {
             ></path>
           </svg>
         </a>
-        <a href="https://github.com/tayracutri">
+        <a href="https://github.com/tayracutri" target="blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"

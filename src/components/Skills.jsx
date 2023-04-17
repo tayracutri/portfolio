@@ -32,7 +32,7 @@ const Skills = () => {
         <div className="col">
           <div>
             <img src={react} alt="React" className="animation" />
-            <p>React</p>
+            <p>React.js</p>
           </div>
           <div>
             <img src={node} alt="Node" className="animation" />

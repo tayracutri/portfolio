@@ -90,40 +90,38 @@ export const Contact = () => {
         <Grid container>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <input
+              className="text-field"
               label="Name"
-              type="name"
               name="from_name"
-              fullWidth
+              onChange={(e) => setName(e.target.value)}
               placeholder="Name"
               required
               value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="text-field"
+              type="name"
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <input
-              label="Email"
-              type="email"
-              placeholder="email@email.com"
-              name="from_name"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               className="text-field"
+              name="from_name"
+              label="Email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="email@email.com"
+              required
+              type="email"
+              value={email}
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <textarea
-              label="Message"
-              name="message"
-              type="text"
-              placeholder="Write your message"
-              fullWidth
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
               className="text-field"
+              name="message"
+              label="Message"
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Write your message"
+              required
+              type="text"
+              value={message}
             />
           </Grid>
         </Grid>

@@ -10,8 +10,8 @@ const GetToKnow = () => {
         <p>
           {" "}
           I always loved everything related to IT. I started taking programming
-          courses in 2020. This world amazed me. So I decided I wanted to expand
-          my knowledge and learn new technologies.
+          courses in 2020. This world amazed me. I decided I wanted to expand my
+          knowledge and learn new technologies.
         </p>
         <p>
           I've been working on personal projects for 2 years and a half. And I
@@ -24,6 +24,10 @@ const GetToKnow = () => {
             Hack Academy
           </a>{" "}
           of 600 hours.
+        </p>
+        <p>
+          I'm currently taking online courses on Udemy to improve my skills. And
+          looking forward to find my first professional opportunity!
         </p>
       </div>
     </div>
